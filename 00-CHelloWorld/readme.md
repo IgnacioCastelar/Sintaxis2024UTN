@@ -1,5 +1,3 @@
 Para este trabajo estoy usando la version de GCC 12.2.0 y versión de make 4.4 y el mismo fue compilado en la versión C18 del lenguaje C
-Observaciones: Como se puede ver, el output.txt está vacío, dedicí dejarlo así porque no encuentro una manera de solucionar este problema, desde el .exe la salida de texto se puede leer perfectamente, sin embargo mi compilador no logra extraerlo a un output.txt
-La linea de comandos que usé fue: gcc Hello.c -std=c18 -o a.exe > output.txt  
-Obviamente utilizando todas las variantes que encontré, como usar "2>", reemplazar los .txt por otros formatos, omitir el -std=c18, pero ninguna opción funcionó. 
-Entiendo que procediendo de esta manera debería funcionar, quizás estoy haciendo algo mal, porque probé las versiones del compilador, del make, incluso si se compila y se ejecuta el .exe como mencione anteriormente se ejecuta perfectamente con la salida correspondiente.
+Actualización: Usando los procesos por separado, en vez de ejecutar el comando "gcc Hello.c -std=c18 -o hello.exe > output.txt", ejecuto por un lado: "gcc Hello.c -std=c18 -o Hello.exe " y por otra parte "./Hello.exe > output.txt"
+De esta manera si me genera texto tanto en el txt como en el exe, y el programa funciona perfectamente.
