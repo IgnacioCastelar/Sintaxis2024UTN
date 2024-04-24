@@ -1,3 +1,5 @@
 El compilador utilizado es GCC
 La version de GCC utilizada en este caso es la 12.2.0, esta versión soporta
 los estándares C11 y C18 (como dato adicional, también soporta C2X, aunque el soporte es parcial)
+Se puede configurar el estándar utilizado mediante el comando -std= seguido de la versión que se desea utilizar, por ejemplo -std=c11, la ventaja de esto es que no es necesario cambiar la versión del compilar para poder trabajar sobre código que no tenga soporte sobre el último estándar o el default que maneje la versión del compilador, esto nos permite trabajar sobre proyectos que soporten distintos estándares usando este comando. Tambien podemos usar un estándar con extensiones de GNU, por ejemplo -std=gnu11
+Por defecto, esta versión maneja el estándar de c17 con extensiones de GNU, esto lo podemos ver a través del manual de GCC para la versión 12.2.0 "The default, if no C language dialect options are given, is ‘-std=gnu17’."
